@@ -13,6 +13,10 @@
 		5B5934EB1D137F9500FB7E5F /* toomany.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5B5934E91D137F9500FB7E5F /* toomany.xcdatamodeld */; };
 		5B5934ED1D137F9500FB7E5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B5934EC1D137F9500FB7E5F /* Assets.xcassets */; };
 		5B5934F01D137F9500FB7E5F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B5934EE1D137F9500FB7E5F /* LaunchScreen.storyboard */; };
+		5BA1E5B71D1768DA007BE0C0 /* Friend+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA1E5B31D1768DA007BE0C0 /* Friend+CoreDataProperties.swift */; };
+		5BA1E5B81D1768DA007BE0C0 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA1E5B41D1768DA007BE0C0 /* Friend.swift */; };
+		5BA1E5B91D1768DA007BE0C0 /* Message+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA1E5B51D1768DA007BE0C0 /* Message+CoreDataProperties.swift */; };
+		5BA1E5BA1D1768DA007BE0C0 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA1E5B61D1768DA007BE0C0 /* Message.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		5B5934EC1D137F9500FB7E5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B5934EF1D137F9500FB7E5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5B5934F11D137F9500FB7E5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BA1E5B31D1768DA007BE0C0 /* Friend+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Friend+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		5BA1E5B41D1768DA007BE0C0 /* Friend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
+		5BA1E5B51D1768DA007BE0C0 /* Message+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Message+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		5BA1E5B61D1768DA007BE0C0 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +48,10 @@
 		5B5934D61D137F9200FB7E5F = {
 			isa = PBXGroup;
 			children = (
+				5BA1E5B31D1768DA007BE0C0 /* Friend+CoreDataProperties.swift */,
+				5BA1E5B41D1768DA007BE0C0 /* Friend.swift */,
+				5BA1E5B51D1768DA007BE0C0 /* Message+CoreDataProperties.swift */,
+				5BA1E5B61D1768DA007BE0C0 /* Message.swift */,
 				5B5934E11D137F9300FB7E5F /* toomany */,
 				5B5934E01D137F9300FB7E5F /* Products */,
 			);
@@ -139,8 +151,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B5934EB1D137F9500FB7E5F /* toomany.xcdatamodeld in Sources */,
+				5BA1E5B71D1768DA007BE0C0 /* Friend+CoreDataProperties.swift in Sources */,
+				5BA1E5B91D1768DA007BE0C0 /* Message+CoreDataProperties.swift in Sources */,
+				5BA1E5B81D1768DA007BE0C0 /* Friend.swift in Sources */,
 				5B5934E51D137F9400FB7E5F /* ViewController.swift in Sources */,
 				5B5934E31D137F9400FB7E5F /* AppDelegate.swift in Sources */,
+				5BA1E5BA1D1768DA007BE0C0 /* Message.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,10 +271,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = toomany/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ammach.toomany;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -266,6 +284,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = toomany/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ammach.toomany;
@@ -292,6 +311,7 @@
 				5B5934F61D137F9500FB7E5F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
